@@ -8,7 +8,11 @@ var uuidGen = require('uuid/v4');
 //delete -- borrar
 //put -- modificar
 
-router.get('/about', 
+/**
+  *  Ruta About, devuelve todo descripcion y versión del api
+  *  en formato json.
+  */
+router.get('/about',
   function( req, res, next ){
     console.log("Entro en About con metodo GET");
     res.json(
